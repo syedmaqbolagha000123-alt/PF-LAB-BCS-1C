@@ -1,0 +1,17 @@
+#include <stdio.h>
+ int main()
+ {
+ 	double Bill_Amount, Final_Bill_Amount;
+ 	printf("Enter Bill Amount:");
+ 	scanf("%f",&Bill_Amount);
+ 	if(Bill_Amount>5000)
+	 {   // 10% Discount
+ 	   Final_Bill_Amount = Bill_Amount -(Bill_Amount*0.10);
+	   printf("\n Final Bill Amount =%.2f\n",Final_Bill_Amount); 	
+	 }else
+	 {  // 0 % Discount
+	 	Final_Bill_Amount = Bill_Amount;
+	 	printf("\n Final Bill Amount =%.2f\n",Bill_Amount);	
+	 }
+return 0;	 
+ }
